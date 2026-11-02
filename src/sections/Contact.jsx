@@ -120,7 +120,7 @@ export default function Contact() {
                 Available for Immediate SDE Internships & Technical Engagements
               </h3>
               <p className="text-xs sm:text-sm text-[#A3A3A3] mt-0.5">
-                Targeting Summer/Fall 2026 internships and junior backend development roles.
+                Targeting Summer/Fall 2027 internships and junior backend development roles.
               </p>
             </div>
           </div>
