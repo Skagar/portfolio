@@ -1,0 +1,150 @@
+<svg viewBox="0 0 500 600" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient for the Portrait Card -->
+    <linearGradient id="portraitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1c1f"/>
+      <stop offset="50%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0c0c0e"/>
+    </linearGradient>
+
+    <!-- Subtle Natural Studio Rim Glow -->
+    <radialGradient id="softStudioLight" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="60%" stop-color="#D92332" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Black Hoodie Gradients with Natural Shading -->
+    <linearGradient id="hoodieBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242428"/>
+      <stop offset="40%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#0e0e11"/>
+    </linearGradient>
+    <linearGradient id="hoodieShoulderLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c2c32"/>
+      <stop offset="100%" stop-color="#18181c"/>
+    </linearGradient>
+    <linearGradient id="hoodieShoulderRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#26262b"/>
+      <stop offset="100%" stop-color="#141418"/>
+    </linearGradient>
+
+    <!-- Subtle Red Accent Cord/Piping -->
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D92332"/>
+      <stop offset="100%" stop-color="#A91D2B"/>
+    </linearGradient>
+
+    <!-- Skin Tone Gradients -->
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0cbaf"/>
+      <stop offset="70%" stop-color="#e2b998"/>
+      <stop offset="100%" stop-color="#cca282"/>
+    </linearGradient>
+    <linearGradient id="neckShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bd9171"/>
+      <stop offset="100%" stop-color="#a67b5c"/>
+    </linearGradient>
+
+    <!-- Hair Tone Gradients -->
+    <linearGradient id="hairDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d221c"/>
+      <stop offset="50%" stop-color="#1f1713"/>
+      <stop offset="100%" stop-color="#120e0c"/>
+    </linearGradient>
+    <linearGradient id="hairHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#45342a"/>
+      <stop offset="100%" stop-color="#221914"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Neutral Portrait Studio Backdrop -->
+  <rect width="500" height="600" fill="url(#portraitBg)" rx="24"/>
+  <rect width="500" height="600" fill="url(#softStudioLight)" rx="24"/>
+
+  <!-- Subtle Rim Light Accent on Edge -->
+  <path d="M 495 100 Q 500 300 495 500" stroke="#D92332" stroke-width="1.5" stroke-opacity="0.3" fill="none"/>
+
+  <!-- Developer Silhouette: Torso & Shoulders -->
+  <!-- Main Chest/Torso -->
+  <path d="M 70 600 C 95 440, 160 410, 250 410 C 340 410, 405 440, 430 600 Z" 
+        fill="url(#hoodieBody)" />
+
+  <!-- Left Shoulder Fold -->
+  <path d="M 70 600 C 90 480, 150 430, 210 420 L 190 600 Z" 
+        fill="url(#hoodieShoulderLeft)" opacity="0.8"/>
+
+  <!-- Right Shoulder Fold -->
+  <path d="M 430 600 C 410 480, 350 430, 290 420 L 310 600 Z" 
+        fill="url(#hoodieShoulderRight)" opacity="0.8"/>
+
+  <!-- Hoodie Center Seam / Subtle Zipper with Crimson Pull -->
+  <line x1="250" y1="450" x2="250" y2="600" stroke="#2e2e34" stroke-width="3" />
+  <rect x="248.5" y="475" width="3" height="18" fill="url(#redAccent)" rx="1.5" />
+
+  <!-- Hoodie Drawstrings with Subtle Red Tips -->
+  <path d="M 220 440 Q 215 480 218 515" stroke="#33333a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="216.5" y="515" width="3.5" height="10" fill="url(#redAccent)" rx="1.5"/>
+
+  <path d="M 280 440 Q 285 480 282 515" stroke="#33333a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <rect x="280" y="515" width="3.5" height="10" fill="url(#redAccent)" rx="1.5"/>
+
+  <!-- Hoodie Collar / Cowl Neck Opening -->
+  <path d="M 185 435 C 190 380, 310 380, 315 435 C 290 465, 210 465, 185 435 Z" 
+        fill="#121215" stroke="#25252b" stroke-width="2"/>
+
+  <!-- Neck -->
+  <path d="M 215 375 L 285 375 L 280 300 L 220 300 Z" fill="url(#neckShadow)"/>
+  <!-- Front neck lighter area -->
+  <path d="M 225 365 Q 250 380 275 365 L 273 315 Q 250 325 227 315 Z" fill="url(#skinTone)"/>
+
+  <!-- Head / Face Structure -->
+  <path d="M 180 220 C 180 130, 320 130, 320 220 C 320 285, 290 325, 250 325 C 210 325, 180 285, 180 220 Z" 
+        fill="url(#skinTone)"/>
+
+  <!-- Ears -->
+  <path d="M 175 215 Q 170 235 180 250 Q 183 235 180 215 Z" fill="#dda989"/>
+  <path d="M 325 215 Q 330 235 320 250 Q 317 235 320 215 Z" fill="#cca082"/>
+
+  <!-- Natural Hair Style (Clean, modern short dark hair) -->
+  <path d="M 172 205 C 170 120, 205 95, 255 95 C 305 95, 335 125, 330 205 C 325 185, 310 130, 250 130 C 195 130, 180 180, 172 205 Z" 
+        fill="url(#hairDark)"/>
+  <!-- Hair volume & side cuts -->
+  <path d="M 175 190 C 185 110, 230 100, 265 100 C 305 100, 325 120, 325 185 C 315 140, 290 120, 255 120 C 210 120, 185 155, 175 190 Z" 
+        fill="url(#hairHighlight)"/>
+
+  <!-- Eyebrows (Natural & focused) -->
+  <path d="M 200 195 Q 218 190 235 194" stroke="#2a1f1a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M 265 194 Q 282 190 300 195" stroke="#2a1f1a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyes (Clear, friendly, engaged) -->
+  <!-- Left Eye -->
+  <ellipse cx="218" cy="214" rx="11" ry="6.5" fill="#ffffff"/>
+  <circle cx="219" cy="214" r="5" fill="#36251b"/>
+  <circle cx="219" cy="214" r="2.5" fill="#120c08"/>
+  <circle cx="221" cy="212" r="1.5" fill="#ffffff"/> <!-- catchlight -->
+  <path d="M 207 210 Q 218 206 229 210" stroke="#3d2d24" stroke-width="2" fill="none"/>
+
+  <!-- Right Eye -->
+  <ellipse cx="282" cy="214" rx="11" ry="6.5" fill="#ffffff"/>
+  <circle cx="281" cy="214" r="5" fill="#36251b"/>
+  <circle cx="281" cy="214" r="2.5" fill="#120c08"/>
+  <circle cx="283" cy="212" r="1.5" fill="#ffffff"/> <!-- catchlight -->
+  <path d="M 271 210 Q 282 206 293 210" stroke="#3d2d24" stroke-width="2" fill="none"/>
+
+  <!-- Nose (Subtle natural shading) -->
+  <path d="M 248 205 L 246 242 Q 242 248 250 250 Q 258 248 254 242" 
+        stroke="#be8f70" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="244" cy="246" rx="2" ry="1.2" fill="#aa7c5f"/>
+  <ellipse cx="256" cy="246" rx="2" ry="1.2" fill="#aa7c5f"/>
+
+  <!-- Gentle Confident Smile -->
+  <path d="M 230 274 Q 250 286 270 274" stroke="#a45852" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 233 274 Q 250 280 267 274" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Subtle Chin line -->
+  <path d="M 242 300 Q 250 304 258 300" stroke="#be8f70" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Thin Inner Border to frame the portrait like the reference card -->
+  <rect x="1" y="1" width="498" height="598" fill="none" stroke="#252525" stroke-width="1" rx="23"/>
+</svg>
